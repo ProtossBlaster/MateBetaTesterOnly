@@ -1,0 +1,55 @@
+name: "🔬 BetaTester data report (REEV)"
+description: "Send captured REEV data — encrypted bundle + logbook context + official-app screenshots."
+title: "[beta] "
+labels: ["beta", "reev"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Thanks for helping build REEV support! 🙏
+
+        > **🚫 This is NOT for reporting wrong/inconsistent data.** Statistics, Costs, Trips and
+        > efficiency can be skewed on a REEV in this beta — that is **expected** and is exactly
+        > what we are fixing. Issues about inconsistent data will be closed.
+        >
+        > Use this form to **send us data** so we can decode the REEV signals.
+  - type: checkboxes
+    id: ack
+    attributes:
+      label: Acknowledgement
+      options:
+        - label: "I understand stats/costs/trips can be skewed in this beta and this report is NOT about that."
+          required: true
+  - type: dropdown
+    id: model
+    attributes:
+      label: Vehicle
+      options:
+        - "B10 REEV"
+        - "C10 REEV"
+        - "Other REEV"
+    validations:
+      required: true
+  - type: textarea
+    id: logbook
+    attributes:
+      label: What did you do? (context for the captured signals)
+      description: "Briefly describe the drive/charge/refuel and anything notable, with rough times — e.g. 'engine started to charge ~14:30 while driving', 'refueled to 100% at 09:00'. This pairs with your logbook notes."
+      placeholder: "e.g. 30 km drive, engine kicked in around 60% battery; then refueled to full."
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Official-app screenshots
+      description: "Drag & drop screenshots of the official Leapmotor app around the same time: fuel level, fuel/EV/combined range, consumption (L/100km), and the EV-vs-fuel split. These are the ground truth we map against."
+    validations:
+      required: true
+  - type: checkboxes
+    id: bundle
+    attributes:
+      label: Encrypted data bundle
+      description: "Export it from the **REEV** page → *Export encrypted data bundle*, then drag the `.matebeta` file into this issue. It is encrypted (only the maintainer can open it) and GPS is stripped."
+      options:
+        - label: "I attached the encrypted `.matebeta` bundle to this issue."
+          required: true

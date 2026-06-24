@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: ⚠️ Wrong / inconsistent data on Statistics, Costs, Trips?
+    url: https://github.com/ProtossBlaster/MateBetaTesterOnly#-read-this-first
+    about: "Expected in this beta — REEV isn't integrated yet. Please do NOT open an issue for it."
+  - name: 🐛 A bug in the NORMAL Mate (not REEV/beta)?
+    url: https://github.com/ProtossBlaster/leapmotor-mate/issues
+    about: "Open it on the official LeapMotor Mate repository instead."
