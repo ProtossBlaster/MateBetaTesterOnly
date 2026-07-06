@@ -1,6 +1,6 @@
 name: "LeapMotor Mate — BetaTester"
 description: "DATA-COLLECTION BETA for building REEV (range-extender) support. It logs ALL vehicle signals and lets you send us an encrypted bundle. Statistics/Costs/Trips may be SKEWED — do NOT open issues about inconsistent data. Use a Leapmotor account that is NOT used by your normal Mate at the same time."
-version: "beta"
+version: "2.3.1"
 slug: "leapmotor_mate_beta"
 url: "https://github.com/ProtossBlaster/MateBetaTesterOnly"
 # Rolling beta image, built from the SAME source as the official Mate but with MATE_RESEARCH=1
@@ -32,6 +32,8 @@ ports_description:
 
 options:
   log_level: "info"
+  research: true
 
 schema:
   log_level: "list(trace|debug|info|warning|error|critical)"
+  research: bool
