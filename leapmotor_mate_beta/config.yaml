@@ -1,13 +1,14 @@
 name: "LeapMotor Mate — BetaTester"
 description: "DATA-COLLECTION BETA for building REEV (range-extender) support. It logs ALL vehicle signals and lets you send us an encrypted bundle. Statistics/Costs/Trips may be SKEWED — do NOT open issues about inconsistent data. Use a Leapmotor account that is NOT used by your normal Mate at the same time."
-version: "2.5.3"
+version: "latest"
 slug: "leapmotor_mate_beta"
 url: "https://github.com/ProtossBlaster/MateBetaTesterOnly"
-# Runs the SAME official image AND version number as the release channel — the `version:` above is
-# kept in lockstep with prod by leapmotor-mate/.github/workflows/sync-beta-addon.yml on every
-# release. Research / data-collection (full-signal capture + REEV) is turned ON at runtime by the
-# `research` option below (see run.sh), NOT by a separate image or a "beta" tag. Updates arrive like
-# any other add-on: the normal "Update" button, when the synced version number goes up.
+# Runs the SAME official image as prod, always the current one (:latest). Why "latest" and not a
+# number: Home Assistant treats the legacy "beta" tag as SPECIALCONTAINER, so it will NOT offer an
+# in-place update from an existing "beta" install to a numbered version — only "latest"/"dev" rank
+# above "beta" (verified with awesomeversion). "latest" is therefore the ONLY one-click, no-reinstall,
+# no-data-loss way to move testers already on "beta" onto the current build. Research / data-collection
+# (full-signal capture + REEV) is turned ON at runtime by the `research` option below (see run.sh).
 image: "ghcr.io/protossblaster/leapmotor-mate"
 init: false
 startup: "application"
