@@ -3,8 +3,11 @@ description: "DATA-COLLECTION BETA for building REEV (range-extender) support. I
 version: "beta"
 slug: "leapmotor_mate_beta"
 url: "https://github.com/ProtossBlaster/MateBetaTesterOnly"
-# Rolling beta image, built from the SAME source as the official Mate but with MATE_RESEARCH=1
-# (full-signal capture on). The Supervisor appends ":beta". To update: Rebuild the add-on.
+# Runs the SAME official image AND version number as the release channel — the `version:` above is
+# kept in lockstep with prod by leapmotor-mate/.github/workflows/sync-beta-addon.yml on every
+# release. Research / data-collection (full-signal capture + REEV) is turned ON at runtime by the
+# `research` option below (see run.sh), NOT by a separate image or a "beta" tag. Updates arrive like
+# any other add-on: the normal "Update" button, when the synced version number goes up.
 image: "ghcr.io/protossblaster/leapmotor-mate"
 init: false
 startup: "application"
@@ -32,6 +35,8 @@ ports_description:
 
 options:
   log_level: "info"
+  research: true
 
 schema:
   log_level: "list(trace|debug|info|warning|error|critical)"
+  research: "bool"
