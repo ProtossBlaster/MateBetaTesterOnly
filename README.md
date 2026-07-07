@@ -42,7 +42,7 @@ signals correctly and then ship real REEV support in the normal Mate.
 1. Settings → Add-ons → Add-on Store → ⋮ → **Repositories**.
 2. Add: `https://github.com/ProtossBlaster/MateBetaTesterOnly`
 3. Install **LeapMotor Mate — BetaTester**, then open it.
-4. **To update:** open the add-on → **Rebuild** (the beta image is a rolling tag).
+4. **To update:** in the Add-on **Store**, open the top-right **⋮** menu → **Check for updates**; Home Assistant then offers the new version → open **LeapMotor Mate — BetaTester** and click **Update** (the beta image is a rolling tag, so HA only surfaces the update after that manual check).
 
 ### Docker
 ```bash
