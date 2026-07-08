@@ -1,6 +1,6 @@
 name: "LeapMotor Mate — BetaTester"
 description: "DATA-COLLECTION BETA for building REEV (range-extender) support. It logs ALL vehicle signals and lets you send us an encrypted bundle. Statistics/Costs/Trips may be SKEWED — do NOT open issues about inconsistent data. Use a Leapmotor account that is NOT used by your normal Mate at the same time."
-version: "latest"
+version: "2.5.4"
 slug: "leapmotor_mate_beta"
 url: "https://github.com/ProtossBlaster/MateBetaTesterOnly"
 # Runs the SAME official image as prod, always the current one (:latest). Why "latest" and not a
