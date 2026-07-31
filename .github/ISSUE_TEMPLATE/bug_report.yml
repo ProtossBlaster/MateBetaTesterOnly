@@ -8,17 +8,21 @@ body:
       value: |
         ## Thanks for helping build REEV support! 🙏
 
-        > **🚫 This is NOT for reporting wrong/inconsistent data.** Statistics, Costs, Trips and
+        > **A number that just looks wrong: no need to report it.** Statistics, Costs, Trips and
         > efficiency can be skewed on a REEV in this beta — that is **expected** and is exactly
-        > what we are fixing. Issues about inconsistent data will be closed.
+        > what we are fixing.
         >
-        > Use this form to **send us data** so we can decode the REEV signals.
+        > **Something that looks broken: please do tell us.** One refuel counted three times, a
+        > duplicate trip, a value that cannot be true — that is a real bug, not beta skew. Reports
+        > like that have already fixed things for every REEV owner.
+        >
+        > Either way, use this form to **send us data** so we can decode the REEV signals.
   - type: checkboxes
     id: ack
     attributes:
       label: Acknowledgement
       options:
-        - label: "I understand stats/costs/trips can be skewed in this beta and this report is NOT about that."
+        - label: "I understand stats/costs/trips can be skewed in this beta — and that anything which looks broken (an event counted twice, a duplicate row, an impossible value) is still worth reporting."
           required: true
   - type: dropdown
     id: model

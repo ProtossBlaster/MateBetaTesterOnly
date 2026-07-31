@@ -28,4 +28,6 @@ normal LeapMotor Mate**. This build is a temporary data-collection tool, not a f
 
 ## Note on accuracy
 Statistics, Costs, Trips and similar pages may be **inaccurate** in this build because REEV
-behaviour is not yet integrated. This is expected — please do not report it.
+behaviour is not yet integrated. This is expected — a figure that just looks off needs no report.
+Anything that looks **broken** is worth reporting, though: an event counted more than once, a
+duplicate row, a value that cannot be true.

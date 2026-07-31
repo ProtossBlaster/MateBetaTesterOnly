@@ -1,5 +1,5 @@
 name: "LeapMotor Mate — BetaTester"
-description: "DATA-COLLECTION BETA for building REEV (range-extender) support. It logs ALL vehicle signals and lets you send us an encrypted bundle. Statistics/Costs/Trips may be SKEWED — do NOT open issues about inconsistent data. Use a Leapmotor account that is NOT used by your normal Mate at the same time."
+description: "DATA-COLLECTION BETA for building REEV (range-extender) support. It logs ALL vehicle signals and lets you send us an encrypted bundle. Statistics/Costs/Trips may be SKEWED and that is expected, but DO report anything that looks broken (an event counted twice, a duplicate row). Use a Leapmotor account that is NOT used by your normal Mate at the same time."
 version: "3.4.2"
 slug: "leapmotor_mate_beta"
 url: "https://github.com/ProtossBlaster/MateBetaTesterOnly"

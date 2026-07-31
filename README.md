@@ -11,8 +11,11 @@
 - **The data on the pages can be WRONG.** Statistics, Costs, Trips, efficiency and similar pages
   may be **skewed / inconsistent** on a REEV — because REEV behaviour (e.g. the petrol engine
   charging the battery while you drive) is **not yet integrated**. That is expected.
-- **🚫 Do NOT open issues about inconsistent / wrong data.** Those are known and are exactly what
-  this beta exists to fix. Such issues will be closed.
+- **A number that just looks off does not need an issue.** Those are known and are exactly what
+  this beta exists to fix.
+- **But if something looks BROKEN, please do open one.** One refuel counted three times, a
+  duplicate trip, a value that cannot be true — that is a real bug, not beta skew, and reports
+  like that have already fixed things for every REEV owner.
 - **This build logs ALL of your vehicle's raw signals** locally, so we can decode the REEV
   signals. Nothing is sent anywhere automatically — **you** choose when to export and send.
 - **Use a Leapmotor account that your normal Mate is NOT using at the same time.** Two Mate

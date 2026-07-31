@@ -6,7 +6,9 @@ https://github.com/ProtossBlaster/leapmotor-mate
 
 ## ⚠️ Important
 - **Statistics, Costs, Trips can be SKEWED** on a REEV here — REEV behaviour isn't integrated
-  yet. This is expected. **Do NOT open issues about inconsistent data.**
+  yet. This is expected, and a number that just looks off needs no issue.
+- **Something that looks BROKEN is worth reporting**, though: one refuel counted three times, a
+  duplicate trip, a value that cannot be true. That is a real bug, not beta skew.
 - This build **logs all raw vehicle signals** locally. Nothing leaves your device until **you**
   export an **encrypted** bundle and attach it to an issue (GPS is stripped).
 - **Use a Leapmotor account NOT used by your normal Mate at the same time** — two instances on
