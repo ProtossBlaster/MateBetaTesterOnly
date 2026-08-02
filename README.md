@@ -41,6 +41,12 @@ signals correctly and then ship real REEV support in the normal Mate.
 
 ## Install
 
+> ⚠️ **Coming from the ordinary build? Export your data first.**
+> This is a **separate** install — its own add-on, its own Docker volume — so it opens on an **empty**
+> database and your trips, charges and refuels do not follow you across.
+> **Before installing:** in the ordinary Mate, *Settings → Export database*.
+> **After installing:** *Settings → Import database*, upload that file, and everything is back.
+
 ### Home Assistant add-on
 1. Settings → Add-ons → Add-on Store → ⋮ → **Repositories**.
 2. Add: `https://github.com/ProtossBlaster/MateBetaTesterOnly`
