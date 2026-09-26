@@ -39,6 +39,19 @@ signals correctly and then ship real REEV support in the normal Mate.
 
 ---
 
+## Updating an existing BetaTester installation to Mate 4
+
+Use your normal update procedure on the existing BetaTester add-on or Docker
+container. Keep the same `leapmotor_mate_beta` add-on, configuration and `/data`
+volume. No migration-specific installation, certificate upload, account setup,
+database export/import or command is required.
+
+Mate selects a compatible API automatically for the whole account. REEV and
+mixed-model accounts outside the independent API's qualified coverage retain the
+legacy compatibility backend, so existing signal collection continues. Vehicle
+commands never cause fallback or replay through another API. This update does
+not change the beta's consent, export behavior or limits on REEV statistics.
+
 ## Install
 
 > ⚠️ **Coming from the ordinary build? Export your data first.**
