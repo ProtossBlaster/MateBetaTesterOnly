@@ -8,11 +8,11 @@ url: "https://github.com/ProtossBlaster/MateBetaTesterOnly"
 # (full-signal capture + REEV) is turned ON at runtime by the `research` option below (see run.sh),
 # NOT by a separate image or a "beta" tag. So the version is a real number and updates arrive via the
 # normal "Update" button.
-# ⚠️ ONE-TIME MIGRATION for anyone still on the OLD "beta" tag: HA treats "beta" as SPECIALCONTAINER
-# and will NOT update it in-place to a number (the Update button stays greyed). They move over ONCE,
-# losslessly, with Mate's own tools: Settings → Export/Backup → download the DB backup, reinstall this
-# add-on, sign in, then Settings → Export/Backup → Restore database → upload that backup. ALL data
-# comes back (verified end-to-end). Fresh installs never hit this.
+# Historical literal "beta" installs: Supervisor supports same-slug in-place updates
+# through version inequality, but Core's update-entity dialog orders "beta" above
+# numbered versions and may disable the UI. Do not infer a mandatory reinstall or
+# database restore from AwesomeVersion ordering. A zero-extra-action historical UI
+# transition remains unverified; numbered installations use the normal update path.
 image: "ghcr.io/protossblaster/leapmotor-mate"
 init: false
 startup: "application"

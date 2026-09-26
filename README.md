@@ -39,10 +39,10 @@ signals correctly and then ship real REEV support in the normal Mate.
 
 ---
 
-## Updating an existing BetaTester installation to Mate 4
+## Updating a numbered BetaTester installation to Mate 4
 
-Use your normal update procedure on the existing BetaTester add-on or Docker
-container. Keep the same `leapmotor_mate_beta` add-on, configuration and `/data`
+For an existing numbered BetaTester add-on (the current baseline is **3.19.2**)
+or a Docker container, use your normal update procedure. Keep the same `leapmotor_mate_beta` add-on, configuration and `/data`
 volume. No migration-specific installation, certificate upload, account setup,
 database export/import or command is required.
 
@@ -51,6 +51,13 @@ mixed-model accounts outside the independent API's qualified coverage retain the
 legacy compatibility backend, so existing signal collection continues. Vehicle
 commands never cause fallback or replay through another API. This update does
 not change the beta's consent, export behavior or limits on REEV statistics.
+
+Historical Home Assistant installations whose installed version still reads
+literal **`beta`** have a separate platform limitation: Supervisor supports
+an in-place update, but Home Assistant's update dialog can hide it because it
+orders `beta` above numbered versions. A migration without extra actions has
+not been verified for that historical installation type. Reinstalling or
+exporting/restoring data is not an inherent requirement of the Supervisor update.
 
 ## Install
 

@@ -10,9 +10,14 @@ same time.
 
 ## Updating to Mate 4
 
-Update the existing BetaTester add-on normally. The `leapmotor_mate_beta` slug,
+Update an existing numbered BetaTester add-on (currently 3.19.2) normally. The `leapmotor_mate_beta` slug,
 configuration, account and persistent `/data` stay in place; no extra setup,
 certificate upload, export/import or migration command is needed. REEV and
 mixed-model accounts that cannot qualify for the independent API automatically
 keep the legacy compatibility backend. Signal collection and consent remain as
 before; this does not change the limits on REEV statistics.
+
+Historical installs still reporting literal `beta` may have an update-dialog
+version-ordering limitation. Supervisor supports an in-place update, but no
+zero-extra-action migration has been verified for that historical UI path.
+A reinstall or database export/restore is not inherently required.
