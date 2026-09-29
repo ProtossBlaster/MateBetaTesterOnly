@@ -1,23 +1,29 @@
-# 🔬 LeapMotor Mate — BetaTester (REEV data collection)
+# 🔬 LeapMotor Mate — BetaTester (research build)
 
-> **This is NOT the normal Mate.** It is a **beta-tester build whose only job is to collect data**
-> so we can add **REEV (range-extender) support** to LeapMotor Mate. If you just want to use Mate,
-> install the official one: **https://github.com/ProtossBlaster/leapmotor-mate**
+> ✅ **REEV support has shipped.** Since **Mate 4.7.0** the range-extender pages — the REEV page,
+> the petrol per trip and per period, and the REEV battery packs in the setup wizard — are in the
+> **normal** Mate: **https://github.com/ProtossBlaster/leapmotor-mate**
+>
+> **This channel stays open for now** and keeps receiving every release, for the testers who have
+> not moved across yet. Moving across is a backup and a restore, in that order:
+> [how to do it](https://github.com/ProtossBlaster/leapmotor-mate/blob/main/docs/BETA-TO-OFFICIAL.md).
 
 ---
 
 ## ⚠️ Read this first
 
-- **The data on the pages can be WRONG.** Statistics, Costs, Trips, efficiency and similar pages
-  may be **skewed / inconsistent** on a REEV — because REEV behaviour (e.g. the petrol engine
-  charging the battery while you drive) is **not yet integrated**. That is expected.
-- **A number that just looks off does not need an issue.** Those are known and are exactly what
-  this beta exists to fix.
-- **But if something looks BROKEN, please do open one.** One refuel counted three times, a
-  duplicate trip, a value that cannot be true — that is a real bug, not beta skew, and reports
-  like that have already fixed things for every REEV owner.
-- **This build logs ALL of your vehicle's raw signals** locally, so we can decode the REEV
-  signals. Nothing is sent anywhere automatically — **you** choose when to export and send.
+- **This build is the normal Mate plus research.** Its pages are the official ones now, so the
+  REEV figures here are the same figures there. What it adds is the full raw-signal capture, the
+  logbook and the encrypted export.
+- **One figure is still only here**: the ⚡ electric rate of a generator drive
+  (`reev_elec_kwh_100km`). It is the energy that left the pack over *all* the kilometres, it reads
+  46, 82.7, even 386 kWh/100 km on real drives, and it has never been held against a dashboard —
+  so it stays where it can be watched.
+- **If something looks BROKEN, please open an issue.** One refuel counted three times, a
+  duplicate trip, a value that cannot be true — reports like that have already fixed things for
+  every REEV owner.
+- **This build logs ALL of your vehicle's raw signals** locally. Nothing is sent anywhere
+  automatically — **you** choose when to export and send.
 - **Use a Leapmotor account that your normal Mate is NOT using at the same time.** Two Mate
   instances on one account fight over the session ("Not authorised" / missing data).
 
@@ -34,8 +40,9 @@ By installing and using this build you agree to take part in this data collectio
 3. **Encrypted export** — one click produces a bundle that is **encrypted so only the maintainer
    can open it** (your GPS is stripped out). You attach it to an issue here.
 
-Pairing the raw signals with your logbook + official-app screenshots is how we map the REEV
-signals correctly and then ship real REEV support in the normal Mate.
+Pairing the raw signals with your logbook + official-app screenshots is how the REEV signals were
+mapped — and it is how the petrol figure in 4.7.0 was calibrated, against a drive whose litres an
+owner could also read in the official Leapmotor app.
 
 ---
 
