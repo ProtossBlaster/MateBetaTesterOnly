@@ -27,7 +27,8 @@ normal LeapMotor Mate**. This build is a temporary data-collection tool, not a f
   https://github.com/ProtossBlaster/leapmotor-mate
 
 ## Note on accuracy
-Statistics, Costs, Trips and similar pages may be **inaccurate** in this build because REEV
-behaviour is not yet integrated. This is expected — a figure that just looks off needs no report.
-Anything that looks **broken** is worth reporting, though: an event counted more than once, a
-duplicate row, a value that cannot be true.
+The pages in this build are the official Mate's: REEV support shipped with **4.7.0**, so the
+figures here are the figures there. One is still only here — the ⚡ electric rate of a generator
+drive (`reev_elec_kwh_100km`), which has never been held against a dashboard.
+Anything that looks **broken** is worth reporting: an event counted more than once, a duplicate
+row, a value that cannot be true.
