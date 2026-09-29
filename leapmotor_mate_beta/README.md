@@ -1,10 +1,14 @@
 # LeapMotor Mate — BetaTester 🔬
 
-Data-collection beta for building **REEV (range-extender)** support. See **DOCS.md** for the
-full guide and the [repository README](https://github.com/ProtossBlaster/MateBetaTesterOnly).
+Research build: the same Mate as the official one, plus full raw-signal capture, the logbook and
+the encrypted export. See **DOCS.md** for the full guide and the
+[repository README](https://github.com/ProtossBlaster/MateBetaTesterOnly).
 
-⚠️ Stats/Costs/Trips can be skewed here (REEV not integrated yet) — a number that just looks off
-needs no issue. **Something that looks broken does**: a refuel counted three times, a duplicate
+✅ **REEV support is in the official build since 4.7.0.** This channel stays open for now, for the
+testers who have not moved across yet — moving across is a backup and a restore, in that order:
+[how to do it](https://github.com/ProtossBlaster/leapmotor-mate/blob/main/docs/BETA-TO-OFFICIAL.md).
+
+⚠️ **Something that looks broken is worth an issue**: a refuel counted three times, a duplicate
 row, a value that cannot be true. Use a Leapmotor account that your normal Mate isn't using at the
 same time.
 
@@ -15,7 +19,7 @@ configuration, account and persistent `/data` stay in place; no extra setup,
 certificate upload, export/import or migration command is needed. REEV and
 mixed-model accounts that cannot qualify for the independent API automatically
 keep the legacy compatibility backend. Signal collection and consent remain as
-before; this does not change the limits on REEV statistics.
+before.
 
 Historical installs still reporting literal `beta` may have an update-dialog
 version-ordering limitation. Supervisor supports an in-place update, but no
