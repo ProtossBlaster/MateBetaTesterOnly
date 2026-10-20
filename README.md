@@ -4,9 +4,10 @@
 > the petrol per trip and per period, and the REEV battery packs in the setup wizard — are in the
 > **normal** Mate: **https://github.com/ProtossBlaster/leapmotor-mate**
 >
-> **This channel stays open for now** and keeps receiving every release, for the testers who have
-> not moved across yet. Moving across is a backup and a restore, in that order:
-> [how to do it](https://github.com/ProtossBlaster/leapmotor-mate/blob/main/docs/BETA-TO-OFFICIAL.md).
+> **This channel is closing.** With the REEV pages in the official build it has no reason to stay:
+> it will be removed by **20 November 2026** at the latest, and the encrypted export with it. Until
+> then it keeps receiving every release. Moving across is a backup and a restore, in that order:
+> [how to do it](https://github.com/ProtossBlaster/leapmotor-mate/blob/main/docs/BETA-TO-OFFICIAL.md). New reports go to [leapmotor-mate](https://github.com/ProtossBlaster/leapmotor-mate/issues).
 
 ---
 
@@ -19,7 +20,7 @@
   (`reev_elec_kwh_100km`). It is the energy that left the pack over *all* the kilometres, it reads
   46, 82.7, even 386 kWh/100 km on real drives, and it has never been held against a dashboard —
   so it stays where it can be watched.
-- **If something looks BROKEN, please open an issue.** One refuel counted three times, a
+- **If something looks BROKEN, please open an issue on [leapmotor-mate](https://github.com/ProtossBlaster/leapmotor-mate/issues).** One refuel counted three times, a
   duplicate trip, a value that cannot be true — reports like that have already fixed things for
   every REEV owner.
 - **This build logs ALL of your vehicle's raw signals** locally. Nothing is sent anywhere

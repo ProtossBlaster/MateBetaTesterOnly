@@ -4,11 +4,11 @@ Research build: the same Mate as the official one, plus full raw-signal capture,
 the encrypted export. See **DOCS.md** for the full guide and the
 [repository README](https://github.com/ProtossBlaster/MateBetaTesterOnly).
 
-✅ **REEV support is in the official build since 4.7.0.** This channel stays open for now, for the
-testers who have not moved across yet — moving across is a backup and a restore, in that order:
-[how to do it](https://github.com/ProtossBlaster/leapmotor-mate/blob/main/docs/BETA-TO-OFFICIAL.md).
+✅ **REEV support is in the official build since 4.7.0, so this channel is closing**: it will be
+removed by **20 November 2026** at the latest, and the encrypted export with it. Moving across is a
+backup and a restore, in that order: [how to do it](https://github.com/ProtossBlaster/leapmotor-mate/blob/main/docs/BETA-TO-OFFICIAL.md).
 
-⚠️ **Something that looks broken is worth an issue**: a refuel counted three times, a duplicate
+⚠️ **Something that looks broken is worth an issue on [leapmotor-mate](https://github.com/ProtossBlaster/leapmotor-mate/issues)**: a refuel counted three times, a duplicate
 row, a value that cannot be true. Use a Leapmotor account that your normal Mate isn't using at the
 same time.
 

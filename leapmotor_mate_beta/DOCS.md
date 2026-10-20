@@ -5,12 +5,13 @@ export.** REEV support itself shipped in the official build with **4.7.0**:
 https://github.com/ProtossBlaster/leapmotor-mate
 
 ## ⚠️ Important
-- **This channel stays open for now** and keeps receiving every release, for the testers who have
-  not moved across yet. Moving across is a backup and a restore, in that order: https://github.com/ProtossBlaster/leapmotor-mate/blob/main/docs/BETA-TO-OFFICIAL.md
+- **This channel is closing**: it will be removed by **20 November 2026** at the latest, and the
+  encrypted export with it. Until then it keeps receiving every release. Moving across is a backup
+  and a restore, in that order: https://github.com/ProtossBlaster/leapmotor-mate/blob/main/docs/BETA-TO-OFFICIAL.md
 - **The pages here are the official ones**, so the REEV figures match. One figure is still only
   here: the ⚡ electric rate of a generator drive (`reev_elec_kwh_100km`), which has never been
   held against a dashboard.
-- **Something that looks BROKEN is worth reporting**: one refuel counted three times, a duplicate
+- **Something that looks BROKEN is worth reporting** on https://github.com/ProtossBlaster/leapmotor-mate/issues: one refuel counted three times, a duplicate
   trip, a value that cannot be true.
 - This build **logs all raw vehicle signals** locally. Nothing leaves your device until **you**
   export an **encrypted** bundle and attach it to an issue (GPS is stripped).
