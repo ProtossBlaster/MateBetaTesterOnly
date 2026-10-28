@@ -1,6 +1,6 @@
 name: "LeapMotor Mate — BetaTester"
 description: "RESEARCH build: the same Mate as the official one, plus full raw-signal capture, the research logbook and the encrypted export. REEV support is in the OFFICIAL build since 4.7.0, so this channel is closing: it will be removed by 20 November 2026 at the latest. Move to the official add-on (a backup and a restore) and report problems on leapmotor-mate. Use a Leapmotor account that is NOT used by your normal Mate at the same time."
-version: "4.16.3"
+version: "4.17.0"
 slug: "leapmotor_mate_beta"
 url: "https://github.com/ProtossBlaster/MateBetaTesterOnly"
 # Runs the SAME official image AND version number as prod — kept in lockstep by
